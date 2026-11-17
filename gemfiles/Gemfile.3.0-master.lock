@@ -1,0 +1,182 @@
+GIT
+  remote: https://github.com/trailblazer/trailblazer-activity-dsl.git
+  revision: dc41c99092f72230153bf146fa1f4c89e6fc7a2a
+  specs:
+    trailblazer-activity-dsl (2.0.0)
+      dry-configurable
+      trailblazer-activity
+
+GIT
+  remote: https://github.com/trailblazer/trailblazer-activity-variable-mapping.git
+  revision: b4abfa4db9868d30664e51660578192489247719
+  specs:
+    trailblazer-activity-variable-mapping (1.0.0)
+      trailblazer-circuit (~> 1.0)
+
+GIT
+  remote: https://github.com/trailblazer/trailblazer-activity.git
+  revision: 622d844ff60152776eefbddf3e6fedccdac61745
+  specs:
+    trailblazer-activity (0.18.0)
+
+GIT
+  remote: https://github.com/trailblazer/trailblazer-circuit.git
+  revision: 361028fe50955e9a3039fefc546134aff2f6e3bf
+  specs:
+    trailblazer-circuit (1.0.0)
+
+GIT
+  remote: https://github.com/trailblazer/trailblazer-core-utils.git
+  revision: bf18f42e9b8fc8d7ee27c5734b36a3a0a0181410
+  specs:
+    trailblazer-core-utils (0.0.10)
+
+GIT
+  remote: https://github.com/trailblazer/trailblazer-developer.git
+  revision: 9b484fc735d901dbcecc648dee8c40ae23f085b0
+  specs:
+    trailblazer-developer (0.2.0)
+
+GIT
+  remote: https://github.com/trailblazer/trailblazer-macro-contract.git
+  revision: 48230d599a0c0a15ee82f1037f8ea5b61e218e69
+  specs:
+    trailblazer-macro-contract (2.2.0)
+      reform (>= 2.2.0, < 3.0.0)
+      trailblazer-macro
+
+GIT
+  remote: https://github.com/trailblazer/trailblazer-macro.git
+  revision: 1c39f3d93a1371c5728dc6a5dfabea073c8ff528
+  specs:
+    trailblazer-macro (2.2.0)
+      trailblazer-activity-dsl
+      trailblazer-activity-variable-mapping
+
+GIT
+  remote: https://github.com/trailblazer/trailblazer-operation.git
+  revision: 17ee56a217e999b533528bd5d7e3103e52f6cea8
+  specs:
+    trailblazer-operation (0.12.0)
+      trailblazer-activity-dsl
+      trailblazer-activity-variable-mapping
+
+GIT
+  remote: https://github.com/trailblazer/trailblazer.git
+  revision: cb39a4c03d8842af5f3b2b1cd9abcd13ed62524d
+  specs:
+    trailblazer (3.0.0.pre.alpha.1)
+      trailblazer-developer
+      trailblazer-macro
+      trailblazer-macro-contract
+      trailblazer-operation
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+    benchmark-ips (2.15.1)
+    bigdecimal (4.1.3)
+    concurrent-ruby (1.3.8)
+    declarative (0.0.20)
+    disposable (0.7.0)
+      declarative (>= 0.0.9, < 1.0.0)
+      representable (>= 3.1.1, < 4)
+    dry-configurable (1.4.0)
+      dry-core (~> 1.0)
+      zeitwerk (~> 2.6)
+    dry-core (1.2.0)
+      concurrent-ruby (~> 1.0)
+      logger
+      zeitwerk (~> 2.6)
+    dry-inflector (1.3.1)
+    dry-initializer (3.2.0)
+    dry-logic (1.6.0)
+      bigdecimal
+      concurrent-ruby (~> 1.0)
+      dry-core (~> 1.1)
+      zeitwerk (~> 2.6)
+    dry-schema (1.16.0)
+      concurrent-ruby (~> 1.0)
+      dry-configurable (~> 1.0, >= 1.0.1)
+      dry-core (~> 1.1)
+      dry-initializer (~> 3.2)
+      dry-logic (~> 1.6)
+      dry-types (~> 1.9, >= 1.9.1)
+      zeitwerk (~> 2.6)
+    dry-types (1.9.1)
+      bigdecimal (>= 3.0)
+      concurrent-ruby (~> 1.0)
+      dry-core (~> 1.0)
+      dry-inflector (~> 1.0)
+      dry-logic (~> 1.4)
+      zeitwerk (~> 2.6)
+    dry-validation (1.11.1)
+      concurrent-ruby (~> 1.0)
+      dry-core (~> 1.1)
+      dry-initializer (~> 3.2)
+      dry-schema (~> 1.14)
+      zeitwerk (~> 2.6)
+    logger (1.7.0)
+    reform (2.6.2)
+      disposable (>= 0.5.0, < 1.0.0)
+      representable (>= 3.1.1, < 4)
+      uber (< 0.2.0)
+    representable (3.3.1)
+      declarative (< 0.1.0)
+      trailblazer-option (>= 0.1.1, < 0.2.0)
+      uber (< 0.2.0)
+    trailblazer-option (0.1.2)
+    uber (0.1.0)
+    zeitwerk (2.8.3)
+
+PLATFORMS
+  ruby
+  x86_64-linux
+
+DEPENDENCIES
+  benchmark-ips
+  dry-validation
+  trailblazer!
+  trailblazer-activity!
+  trailblazer-activity-dsl!
+  trailblazer-activity-variable-mapping!
+  trailblazer-circuit!
+  trailblazer-core-utils!
+  trailblazer-developer!
+  trailblazer-macro!
+  trailblazer-macro-contract!
+  trailblazer-operation!
+
+CHECKSUMS
+  benchmark-ips (2.15.1) sha256=07a1a9f3c6105ecaf68c174fc3fbcddd71a0e9ada6236ae03093a0dcfd812d59
+  bigdecimal (4.1.3) sha256=61ebe1e5e559bdc3cc6f2c0ee7f427321fc838f59611c294356eb04d6e21cf66
+  concurrent-ruby (1.3.8) sha256=b2f1be836e968ccc78ccfce277ea79c72a88633f22306782c16ff23fb415d1e1
+  declarative (0.0.20) sha256=8021dd6cb17ab2b61233c56903d3f5a259c5cf43c80ff332d447d395b17d9ff9
+  disposable (0.7.0) sha256=8fb1b2cf8027090063a77113b5470fcaf85af4e948f4d32003482ee396c5c1d5
+  dry-configurable (1.4.0) sha256=e35d1b5f3c081753ef361f564919db79000f32cfa6f20ee3a3ba5921b41b73ce
+  dry-core (1.2.0) sha256=0cc5a7da88df397f153947eeeae42e876e999c1e30900f3c536fb173854e96a1
+  dry-inflector (1.3.1) sha256=7fb0c2bb04f67638f25c52e7ba39ab435d922a3a5c3cd196120f63accb682dcc
+  dry-initializer (3.2.0) sha256=37d59798f912dc0a1efe14a4db4a9306989007b302dcd5f25d0a2a20c166c4e3
+  dry-logic (1.6.0) sha256=da6fedbc0f90fc41f9b0cc7e6f05f5d529d1efaef6c8dcc8e0733f685745cea2
+  dry-schema (1.16.0) sha256=cd3aaeabc0f1af66ec82a29096d4c4fb92a0a58b9dae29a22b1bbceb78985727
+  dry-types (1.9.1) sha256=baebeecdb9f8395d6c9d227b62011279440943e3ef2468fe8ccc1ba11467f178
+  dry-validation (1.11.1) sha256=70900bb5a2d911c8aab566d3e360c6bff389b8bf92ea8e04885ce51c41ff8085
+  logger (1.7.0) sha256=196edec7cc44b66cfb40f9755ce11b392f21f7967696af15d274dde7edff0203
+  reform (2.6.2) sha256=59f228401d2971708e1a97940279ea81f86c648fb57cb41b0dfba33244e94608
+  representable (3.3.1) sha256=8a5fc8eef99f598147eee0390f606386268b429a840419fcfd3f7a8ccc40f566
+  trailblazer (3.0.0.pre.alpha.1)
+  trailblazer-activity (0.18.0)
+  trailblazer-activity-dsl (2.0.0)
+  trailblazer-activity-variable-mapping (1.0.0)
+  trailblazer-circuit (1.0.0)
+  trailblazer-core-utils (0.0.10)
+  trailblazer-developer (0.2.0)
+  trailblazer-macro (2.2.0)
+  trailblazer-macro-contract (2.2.0)
+  trailblazer-operation (0.12.0)
+  trailblazer-option (0.1.2) sha256=20e4f12ea4e1f718c8007e7944ca21a329eee4eed9e0fa5dde6e8ad8ac4344a3
+  uber (0.1.0) sha256=5beeb407ff807b5db994f82fa9ee07cfceaa561dad8af20be880bc67eba935dc
+  zeitwerk (2.8.3) sha256=2c85125a8467ce069e20123d1e709a08955c9d29c118c25b46b7b7fafdbb92e5
+
+BUNDLED WITH
+  4.0.17
