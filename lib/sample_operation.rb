@@ -1,9 +1,5 @@
 # Thank you, Claude!
 require "trailblazer"
-# require "trailblazer/macro"
-# require "trailblazer/macro/contract"
-# require "trailblazer/operation"
-# require "reform"
 
 if ENV["VERSION"] == "3"
 
@@ -95,13 +91,24 @@ end
 
 class Song::Create < Trailblazer::Operation
   step Policy::Guard(->(ctx, current_user:, **) { current_user.admin? })
-  step :model
+  step :model,
+    In() => [:params], Out() => [:model]
   step Contract::Build(constant: SongForm)
   step Contract::Validate(key: :song)
   step Contract::Persist()
-  step Subprocess(Song::PostProcess), id: :b
+  step Subprocess(Song::PostProcess), id: :b,
+    In() => :my_input_for_post_process,
+    Out() => :my_output_for_post_process
   step :audit_log
   # step :bla
+
+  def my_input_for_post_process(ctx, model:, **)
+    {bogus: true}
+  end
+
+  def my_output_for_post_process(ctx, **)
+    {}
+  end
 
   def model(ctx, **)
     ctx[:model] = Song.new
